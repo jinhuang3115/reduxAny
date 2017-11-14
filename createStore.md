@@ -1,4 +1,4 @@
-#createStore
+# createStore
 用来创建一个Redux Store。一个APP应该只有一个store。
 ![Alt text](redux.png)
 Redux 中提供了如上入的方法：
