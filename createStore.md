@@ -24,7 +24,7 @@ createStore是用来创建Store的方法
 
 ### subscribe
 监听改变事件，可以绑定多个监听回调
-```
+```apple js
 function subscribe(listener) {
     if (typeof listener !== 'function') {
       throw new Error('Expected listener to be a function.');
@@ -60,7 +60,7 @@ function subscribe(listener) {
 ### dispatch
 用来分配操作，并且改变状态只能通过dispatch来执行。
 会循环所有的listeners并执行。
-```
+```apple js
 function dispatch(action) {
     if (!isPlainObject(action)) {
       throw new Error('Actions must be plain objects. ' + 'Use custom middleware for async actions.');
@@ -99,7 +99,7 @@ function dispatch(action) {
 
 ### replaceReducer
 重写当前使用的reducer。如果你想执行一些动态的reducers时可以使用，或者热加载。
-```
+```apple js
 function replaceReducer(nextReducer) {
     if (typeof nextReducer !== 'function') {
       throw new Error('Expected the nextReducer to be a function.');
