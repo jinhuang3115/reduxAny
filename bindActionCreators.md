@@ -1,4 +1,4 @@
-#bindActionCreators
+# bindActionCreators
 惟一使用 bindActionCreators 的场景是当你需要把 action creator 往下传到一个组件上，却不想让这个组件觉察到 Redux 的存在，而且不希望把 Redux store 或 dispatch 传给它。
 
 参数:
